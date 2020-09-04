@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RANDOM NAME PICKER</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    
+</head>
+
+
+<body>
+    <div class="container">
+        <div class="one">
+
+            <h3>!!! Welcome to Random Name Picker !!!</h3>
+            <label for="text1">ENTER NAME BELOW</label><br>
+
+            <input type="text" id="inputid" placeholder="eg: Jung Bahadur"></input>
+
+
+
+            <button id="button1" class="btn" onclick="input()">Add</button>
+
+
+            <button id="button2" class="btn" onclick="randomname()">Display Random Name</button>
+            <button class="btn"><a href="index.html" style="text-decoration: none; cursor: pointer; ">RESET</a></button>
+
+            <div id="random" class="result"></div>
+            <div id="namelist" class="names"></div>
+        </div>
+
+        <div class="two">
+
+            <div class="aside">
+                <h4>---hint---</h4>
+                <p>1)Avoid adding blank text</p>
+                <p>2)Enter Name & click 'add'</p>
+                <p>3)Keep adding name until you are done and </p>
+                <p>4)Click 'Display random name' to see the output </p>
+
+            </div>
+        </div>
+
+
+    </div>
+    <div class="nextupdate"
+        style="border: 1px solid grey;color: rgb(34, 34, 34); background-color: rgba(122, 122, 122, 0.404);  width: 70%; margin:120px auto 0 auto; border-radius: 20px; padding: 10px; box-shadow: 0 0 2px 3px rgb(65, 65, 65);">
+        <p>-- In next update --</p>
+        <p>-- Adding delete button for entered names</p>
+        <p>-- Enter key to add</p>
+        <p>-- Fixing blank text</p>
+    </div>
+</body>
+
+
+
+
+<script src="script.js"></script>
+
+</html>

@@ -1,0 +1,102 @@
+ :root {
+        --pricolor: red;
+        --seccolor: blue;
+        --prifont: 19px;
+        --font: green;
+    }
+
+    * {
+        padding: 0;
+        margin: 0;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        /* background:url(random.jpg) no-repeat; */
+    }
+
+    body::after {
+        content: "";
+        background: url('https://source.unsplash.com/random');
+        background-size: 100%;
+
+
+        opacity: 0.78;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: -1;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        width: 70%;
+        min-height: 400px;
+        margin: 5% auto;
+        background: rgba(196, 255, 226, 0.8);
+        border: 10px dashed rgb(247, 255, 252);
+        border-radius: 20px;
+        box-shadow: 0 0 8px 5px rgb(65, 65, 65);
+
+    }
+
+    .one {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    input {
+        display: inline-block;
+        width: 200px;
+        min-height: 30px;
+
+    }
+
+    .btn {
+        display: inline-block;
+        width: 200px;
+        height: 30px;
+        margin: 5px;
+        /* box-shadow: 0 0 9px 0.2px  rgb(48, 48, 48); */
+    }
+
+    .btn:hover {
+        cursor: pointer;
+        background: rgb(212, 255, 231);
+
+    }
+
+    .aside {
+        font-size: var(--prifont);
+    }
+
+
+
+    @media(max-width: 500px) {
+        .container {
+            display: grid;
+            grid-template-rows: 3fr 1fr auto;
+            grid-template-columns: 1fr;
+
+        }
+
+    }
+
+    .result {
+        display: none;
+        background-color: rgba(163, 163, 163, 0.637);
+        border-radius: 10px;
+        width: 70%;
+        min-height: 50px;
+        padding: 10px;
+
+    }
+
+    span {
+        margin-left: 10px;
+        font-weight: bold;
+        text-decoration: underline;
+        font-size: 20px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
